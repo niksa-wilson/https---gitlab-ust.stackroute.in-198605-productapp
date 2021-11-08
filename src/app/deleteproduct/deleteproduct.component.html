@@ -1,0 +1,32 @@
+<div class="container-fluid">
+    <!-- Reactive Form -->
+    <h1 class="dispaly-4">Delete Product</h1>
+    <form [formGroup]="deleteProductForm" (ngSubmit)="deleteProductDetails()">
+
+        <div class="form-group">
+            <label for="my-input">Product Name</label>
+            <input id="my-input" class="form-control" type="text" formControlName="name">
+        </div>
+
+        <div class="form-group">
+            <label for="my-input">Price</label>
+            <input id="my-input" class="form-control" type="text" formControlName="price">
+        </div>
+
+        <div class="form-group">
+            <label for="my-input">Quantity</label>
+            <input id="my-input" class="form-control" type="text" formControlName="quantity">
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Delete Product">
+        </div>
+
+
+    </form>
+    <div>
+        <p>{{message}}</p>
+    </div>
+
+
+</div>

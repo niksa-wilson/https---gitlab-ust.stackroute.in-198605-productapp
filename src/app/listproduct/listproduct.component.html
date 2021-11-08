@@ -1,0 +1,23 @@
+<div class="container">
+    <table class="table table-light">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Qunatity</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of productList">
+                <td>{{product.id}}</td>
+                <td>{{product.name}}</td>
+                <td>{{product.price}}</td>
+                <td>{{product.quantity}}</td>
+                <td><i class="fas fa-edit me-3" routerLink="/update-product/{{product.id}}"> </i> <i class="fas fa-trash" routerLink="/delete-product/{{product.id}}"></i>
+                </td>                
+            </tr>
+        </tbody>
+    </table>
+</div>

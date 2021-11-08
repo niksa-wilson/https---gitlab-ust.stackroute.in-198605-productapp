@@ -1,0 +1,34 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { AddproductComponent } from './addproduct/addproduct.component';
+import { ListproductComponent } from './listproduct/listproduct.component';
+import { SearchproductComponent } from './searchproduct/searchproduct.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { UpdateproductComponent } from './updateproduct/updateproduct.component';
+import { DeleteproductComponent } from './deleteproduct/deleteproduct.component';
+
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    AddproductComponent,
+    ListproductComponent,
+    SearchproductComponent,
+    UpdateproductComponent,
+    DeleteproductComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+     HttpClientModule
+    ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
